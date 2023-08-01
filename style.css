@@ -1,37 +1,122 @@
-body {
-    font-family: Helvetica, Sans-serif, Arial;
-    background-color: aquamarine;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-h1, h2, h3 {
-    font-family: cursive;
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-h2 {
-    color: rgb(0, 173, 173)
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-header {
-    padding: 30px;
-    background-image: linear-gradient(to right, rgb(96, 96, 96), black);
-    color: rgb(0, 173, 173)
+.logo {
+    color: rgb(53, 53, 53);
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
-header h2 {
-    color: grey;
+span {
+    color: #88BDBC;
 }
 
-.navbar {
-    background-image: linear-gradient(to right, rgb(96, 96, 96), black);
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
-#me {
-    margin-left: 400px;
-    height: 300px;
-    
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-.navbar-toggler {
-    background-color: teal;
+nav ul li a:hover {
+    color:#88BDBC;
+    transition: .4s;
 }
 
+.btn {
+    background-color:#88BDBC;
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 70px;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-shadow: 2px 2px rgba(105, 105, 105, 0.637)
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #88BDBC;
+    outline: none;
+    border-radius: 25px
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #88BDBC;
+    color: white;
+    box-shadow: 0px 0px 5px #0000006d;
+    top: 6px;
+    right: 6px;
+}
