@@ -33,6 +33,10 @@ span {
     color: #88BDBC;
 }
 
+.navbar {
+    margin: auto;
+    border-radius: 10px;
+}
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -46,11 +50,16 @@ nav ul li a {
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
+.nav-item a:hover {
     color:#88BDBC;
     transition: .4s;
+    display: flex;
 }
 
+#navbarDropdown {
+    margin: 2px;
+    padding: 1px;
+}
 .btn {
     background-color:#88BDBC;
     color: rgb(53, 53, 53);
