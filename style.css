@@ -88,22 +88,22 @@ nav ul li a {
 }
 
 h1 {
-    color: white;
+    color: #88BDBC;
     margin: 20px 0 20px;
     font-size: 70px;
+    text-shadow: 2px 2px rgba(105, 105, 105, 0.637)
 }
 
 h3 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     margin-bottom: 50px;
 }
 
 h4 {
-    color: white;
+    color: rgb(0, 0, 0);
     letter-spacing: 2px;
     font-size: 20px;
-    text-shadow: 2px 2px rgba(105, 105, 105, 0.637)
 
 }
 
@@ -146,4 +146,8 @@ h4 {
 
 .{
     background-color: green;
+}
+
+video {
+    margin-top: 20px;
 }
